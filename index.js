@@ -3,7 +3,6 @@ function calcularFactorial() {
     const resultado = document.getElementById("resultado");
     const valor = input.value.trim();
   
-    // Validación
     if (valor === "" || isNaN(valor) || !Number.isInteger(Number(valor)) || Number(valor) < 0) {
       resultado.textContent = "❌ Por favor, ingresa un número entero positivo válido.";
       resultado.style.color = "red";
